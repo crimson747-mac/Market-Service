@@ -1,16 +1,22 @@
 package marketanalysis.market.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Table(name = "seoul_sgg_market_change")
+@AllArgsConstructor
+@NoArgsConstructor
 public class SeoulSggMarketChange {
 
     @Id @GeneratedValue
     private Long id;
+
+    private Long year;
 
     private Long quarter;
 

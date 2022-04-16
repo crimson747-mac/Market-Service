@@ -1,18 +1,22 @@
 package marketanalysis.market.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Table(name = "market_area")
+@NoArgsConstructor
+@AllArgsConstructor
 public class SeoulMarketArea {
 
     @Id @GeneratedValue
     private Long id;
 
-    @Column(name = "year_month")
+    @Column(name = "year_with_month")
     private Long yearAndMonth;
 
     @Column(name = "area_cd")

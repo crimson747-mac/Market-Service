@@ -1,12 +1,16 @@
 package marketanalysis.market.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Table(name = "seoul_umd_market_change")
+@NoArgsConstructor
+@AllArgsConstructor
 public class SeoulUmdMarketChange {
 
     @Id @GeneratedValue
@@ -21,6 +25,9 @@ public class SeoulUmdMarketChange {
 
     @Column(name = "umd_cd_name")
     private String umdCdName;
+
+    @Column(name = "market_change_index")
+    private String changeIndex;
 
     @Column(name = "market_change_index_name")
     private String changeIndexName;
