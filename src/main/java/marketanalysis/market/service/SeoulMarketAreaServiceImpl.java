@@ -6,10 +6,12 @@ import marketanalysis.market.repository.SeoulMarketAreaRepository;
 import marketanalysis.market.service.interfaces.SeoulMarketAreaService;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class SeoulMarketAreaServiceImpl implements SeoulMarketAreaService {
 
