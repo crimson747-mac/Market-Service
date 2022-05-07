@@ -1,8 +1,7 @@
 package marketanalysis.market.repository;
 
 import marketanalysis.market.entity.SeoulMarketStore;
-import marketanalysis.market.entity.enums.store.MarketTypeCd;
-import org.assertj.core.api.Assertions;
+import marketanalysis.market.entity.enums.MarketTypeCd;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -3,7 +3,7 @@ package marketanalysis.market.entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import marketanalysis.market.entity.enums.store.MarketTypeCd;
+import marketanalysis.market.entity.enums.MarketTypeCd;
 
 import javax.persistence.*;
 
