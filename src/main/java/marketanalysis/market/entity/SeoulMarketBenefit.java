@@ -23,7 +23,7 @@ public class SeoulMarketBenefit {
     @Column(name = "quarter")
     private Long quarter;
 
-    @Enumerated
+    @Enumerated(value = EnumType.STRING)
     @Column(name = "market_type_cd")
     private MarketTypeCd marketTypeCd;
 
@@ -40,7 +40,7 @@ public class SeoulMarketBenefit {
     private Long monthAvgIncome;
 
     @Column(name = "month_avg_income_index")
-    private Long monthAvgIncomeIndex;
+    private String monthAvgIncomeIndex;
 
     @Column(name = "expense_total")
     private Long expenseTotal;
