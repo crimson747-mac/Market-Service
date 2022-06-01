@@ -2,7 +2,6 @@ package marketanalysis.market.service;
 
 import lombok.RequiredArgsConstructor;
 import marketanalysis.market.dto.SeoulMarketStoreDto;
-import marketanalysis.market.entity.SeoulMarketStore;
 import marketanalysis.market.repository.SeoulMarketStoreRepository;
 import marketanalysis.market.service.interfaces.SeoulMarketStoreService;
 import org.springframework.stereotype.Service;

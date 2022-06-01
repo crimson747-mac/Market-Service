@@ -15,4 +15,14 @@ public enum MarketTypeCd {
     public String getCdName() {
         return this.cdName;
     }
+
+    public static MarketTypeCd getByCd(String code) {
+        switch (code) {
+            case "U": return MarketTypeCd.U;
+            case "R": return MarketTypeCd.R;
+            case "D": return MarketTypeCd.D;
+            case "A": return MarketTypeCd.A;
+            default: throw new IllegalArgumentException("일치하는 MarketType을 찾을 수 없습니다.");
+        }
+    }
 }

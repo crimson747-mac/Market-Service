@@ -1,5 +1,6 @@
 package marketanalysis.market.config;
 
+import marketanalysis.market.utils.file.FileUtils;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 
